@@ -1,0 +1,122 @@
+
+node_modules/
+.pnp
+.pnp.*
+.npm/
+.yarn/cache/
+.yarn/install-state.gz
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ------------------------------------------------------------
+# Environment / secrets (never commit real values)
+# Keep the example templates tracked
+# ------------------------------------------------------------
+.env
+.env.*
+.env.example
+!.env.local.example
+*.pem
+
+# ------------------------------------------------------------
+# Build output & compiled artifacts
+# ------------------------------------------------------------
+dist/
+build/
+out/
+.next/
+.turbo/
+.expo-shared/
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+
+# ------------------------------------------------------------
+# Expo / React Native (mepro)
+# ------------------------------------------------------------
+.expo/
+web-build/
+expo-env.d.ts
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.metro-health-check*
+*.hmap
+*.ipa
+*.apk
+*.aab
+*.dSYM
+*.dSYM.zip
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# generated native folders (only inside mepro/)
+mepro/ios/
+mepro/android/
+
+# ------------------------------------------------------------
+# Next.js (mepro-web)
+# ------------------------------------------------------------
+mepro-web/next-env.d.ts
+.vercel/
+
+# ------------------------------------------------------------
+# Backend / API (mepro-backend)
+# ------------------------------------------------------------
+# AI model cache (onnxruntime downloads models here)
+.cache/
+mepro-backend/.cache/
+
+# Local user uploads (keep the .gitkeep placeholder)
+uploads/*
+!uploads/.gitkeep
+mepro-backend/uploads/*
+!mepro-backend/uploads/.gitkeep
+
+# ------------------------------------------------------------
+# Tests / coverage
+# ------------------------------------------------------------
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# ------------------------------------------------------------
+# Logs & debug
+# ------------------------------------------------------------
+*.log
+npm-debug.log*
+yarn-debug.*
+yarn-error.*
+.pnpm-debug.log*
+logs/
+*.pid
+*.seed
+*.stackdump
+npm-cache/
+
+# ------------------------------------------------------------
+# Editor / OS
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Local scratch folders
+# ------------------------------------------------------------
+example/
+.gitkeep
